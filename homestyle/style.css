@@ -1,0 +1,27 @@
+body{
+    font-size: 40;
+    text-align: center;
+    background-color: ghostwhite;
+}
+
+h1{
+    font-size: 4em;
+    color: #474747;
+}
+
+nav{
+    font-size: 2em;
+}
+
+nav a{
+    padding: 15px;
+    color: #474747;
+}
+
+nav a:visited{
+    color: #474747;
+}
+
+nav a:hover{
+    color: cornflowerblue;
+}
