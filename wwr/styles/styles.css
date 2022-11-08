@@ -1,3 +1,5 @@
+/* Home Page Style */
+
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Merriweather:wght@300&display=swap");
 
 #content{
@@ -269,4 +271,33 @@ footer a:hover{
     footer {
         margin-top: 25px;
     }
+}
+
+/* FAQ Styles */
+
+.faq{
+    display: inline;
+    padding: 15px;
+    margin: 15px;
+}
+
+#faq-title{
+    margin: 15px;
+    padding: 15px;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.q, .a{
+    margin: 15px;
+    padding: 15px;
+}
+
+.q{
+    color: #0e70a5;
+}
+
+.a{
+    margin-bottom: 50px;
+    color: #474747;
 }
