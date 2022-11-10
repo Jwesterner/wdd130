@@ -236,7 +236,6 @@ footer a:hover{
 #faq-body{
     background-color: #f4dca4;
      font-family: Merriweather, Verdana, 'Trebuchet MS';
-     padding:2em 6em;
 }
 
 #faq-title{
@@ -247,7 +246,7 @@ footer a:hover{
    /*--------Accordion-------*/
  
 .acc-kontainer {
-    width: 100%;
+    width: 92%;
     margin: auto;
 }
 
@@ -256,7 +255,7 @@ footer a:hover{
 }
 
 .acc-kontainer .acc-body {
-    width: 98%;
+    width: 90%;
     width: calc(100% - 20px);
     margin: 0 auto;
     height: 0;
