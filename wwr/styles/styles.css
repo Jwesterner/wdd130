@@ -89,12 +89,12 @@ nav a:hover{
     text-align: center;
 }
 
-main{
+#index-main{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
 
-main section{
+#index-main section{
     text-align: center;
 }
 
@@ -231,6 +231,95 @@ footer a:hover{
     color: #f4dca4;
 }
 
+/* FAQ Styles */
+
+#faq-body{
+    background-color: #f4dca4;
+     font-family: Merriweather, Verdana, 'Trebuchet MS';
+     padding:2em 6em;
+}
+
+#faq-title{
+     color: #474747;
+     text-align:center;
+}
+
+   /*--------Accordion-------*/
+ 
+.acc-kontainer {
+    width: 100%;
+    margin: auto;
+}
+
+.acc-body{
+    font-family: Barlow, Helvetica, sans-serif;
+}
+
+.acc-kontainer .acc-body {
+    width: 98%;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);;
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 28px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+  
+.acc-kontainer label {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    padding: 15px;
+    width: 100%;
+    color: #0e70a5;
+    font-weight: 400;
+    box-sizing: border-box;
+    z-index: 100;
+}
+  
+.acc-kontainer input{
+    display: none;
+}
+  
+.acc-kontainer label:before {
+    content: '+';
+    font-weight: bolder;
+    float: right;
+}
+  
+.acc-kontainer input:checked+label {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+  
+.acc-kontainer input:checked+label:before {
+    content: '-';
+    transition: 0.5s;
+}
+  
+.acc-kontainer input:checked~.acc-body {
+    height: auto;
+    color: #474747;
+    font-size: 1em;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+#chklst, #raftview{
+    float: right;
+    display: inherit;
+    height: inherit;
+    margin-left: 35px;
+}
+
+#raftview{
+    border-radius: 5px;
+}
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -271,33 +360,4 @@ footer a:hover{
     footer {
         margin-top: 25px;
     }
-}
-
-/* FAQ Styles */
-
-.faq{
-    display: inline;
-    padding: 15px;
-    margin: 15px;
-}
-
-#faq-title{
-    margin: 15px;
-    padding: 15px;
-    color: #474747;
-    margin-bottom: 30px;
-}
-
-.q, .a{
-    margin: 15px;
-    padding: 15px;
-}
-
-.q{
-    color: #0e70a5;
-}
-
-.a{
-    margin-bottom: 50px;
-    color: #474747;
 }
