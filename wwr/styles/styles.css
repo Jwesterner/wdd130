@@ -359,4 +359,7 @@ footer a:hover{
     footer {
         margin-top: 25px;
     }
+    #chklst, #raftview{
+        display: none;
+    }
 }
