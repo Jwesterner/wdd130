@@ -278,6 +278,7 @@ footer a:hover{
     font-weight: 400;
     box-sizing: border-box;
     z-index: 100;
+    text-align: left;
 }
   
 .acc-kontainer input{
